@@ -10,7 +10,7 @@ endif()
 
 include_directories(${PCL_INCLUDE_DIRS} ${EIGEN_INCLUDE_LIBS} ${OpenCV_INCLUDE_DIRS})
 
-add_executable(pointRegistration src/test2.cpp src/pointTransform.cpp src/pointTools.cpp
+add_executable(pointRegistration src/test.cpp src/pointTransform.cpp src/pointTools.cpp
         src/clippingAndFilter.cpp src/registrateByICP.cpp src/LRFDEscriptorExtractor.cpp
         src/matchBySHOT.cpp src/matchByFPFH.cpp src/matchByTOLDI.cpp src/TOLDI_LRF.cpp src/TOLDI_descriptor.cpp
         src/matchBy3DHoPD.cpp)
