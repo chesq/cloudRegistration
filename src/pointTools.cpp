@@ -170,8 +170,8 @@ void iss_detector(pcl::PointCloud<pcl::PointXYZ>::Ptr &inputCloud,
     pcl::PointIndicesConstPtr pointIndices;
     iss_3d.setInputCloud(inputCloud);
     iss_3d.setSearchMethod(inputKdTree);
-    iss_3d.setSalientRadius(0.2);//0.05
-    iss_3d.setNonMaxRadius(0.2);//0.05
+    iss_3d.setSalientRadius(0.05);//0.2
+    iss_3d.setNonMaxRadius(0.05);//0.2
     iss_3d.setMinNeighbors(10);
     iss_3d.setThreshold21(0.95);    iss_3d.setThreshold32(0.45);
     iss_3d.compute(*keyPoints);
